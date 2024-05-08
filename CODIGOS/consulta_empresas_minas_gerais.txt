@@ -1,0 +1,63 @@
+-- consulta para saber quantas empresas existem por divisao
+
+SELECT 
+  substring(b.cnae_fiscal_principal,1,2) AS divisao_codigo, 
+  count(DISTINCT a.cnpj_basico) AS qtde_empresas,
+  c.divisao,
+  c.descricao_divisao,
+  c.secao,
+  c.descricao_secao
+FROM `basedosdados.br_me_cnpj.empresas` AS a
+JOIN `basedosdados.br_me_cnpj.estabelecimentos` as b
+ON a.cnpj_basico = b.cnpj_basico
+JOIN `basedosdados.br_bd_diretorios_brasil.cnae_1` as c
+ON substring(b.cnae_fiscal_principal,1,2) = c.divisao
+WHERE a.data = '2024-04-17'
+GROUP BY 
+  substring(b.cnae_fiscal_principal,1,2),
+   c.divisao,
+  c.descricao_divisao,
+  c.secao,
+  c.descricao_secao;
+-- ORDER BY  desc
+-- LIMIT 100
+
+-- quantidade de empresas por cidade/municipio
+
+WITH tabela_resumo as (
+  SELECT 
+  substring(b.cnae_fiscal_principal,1,2) AS divisao_codigo, 
+  count(DISTINCT a.cnpj_basico) AS qtde_empresas,
+  b.id_municipio,
+  d.id_uf,
+  d.nome_uf,
+  c.divisao,
+  c.descricao_divisao,
+  c.secao,
+  c.descricao_secao
+FROM `basedosdados.br_me_cnpj.empresas` AS a
+JOIN `basedosdados.br_me_cnpj.estabelecimentos` as b
+ON a.cnpj_basico = b.cnpj_basico
+JOIN `basedosdados.br_bd_diretorios_brasil.cnae_1` as c
+ON substring(b.cnae_fiscal_principal,1,2) = c.divisao
+JOIN `basedosdados.br_bd_diretorios_brasil.municipio` as d
+ON b.id_municipio = d.id_municipio
+WHERE a.data = '2024-04-17'
+GROUP BY 
+  substring(b.cnae_fiscal_principal,1,2),
+   c.divisao,
+  c.descricao_divisao,
+  c.secao,
+  c.descricao_secao,
+  b.id_municipio,
+  d.nome_uf,
+  d.id_uf
+)
+select 
+  secao, 
+  descricao_secao,
+  id_municipio,
+  COUNT(qtde_empresas) AS total_empresas_secao
+FROM tabela_resumo
+WHERE nome_uf = 'Minas Gerais'
+GROUP BY id_municipio, secao, descricao_secao

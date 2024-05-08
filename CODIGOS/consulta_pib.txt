@@ -1,0 +1,11 @@
+SELECT 
+  id_municipio,
+  pib,
+  impostos_liquidos,
+  va_agropecuaria,
+  va_industria,
+  va_industria,
+  va_adespss
+FROM `basedosdados.br_ibge_pib.municipio` 
+WHERE ano = 2021 AND id_municipio LIKE '31%'
+-- LIMIT 100
