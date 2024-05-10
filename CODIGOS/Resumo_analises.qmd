@@ -13,9 +13,19 @@ Considerando uma empresa que necessita realizar uma campanha de marketing de um 
 
 Diante das caracteristicas: - personalizacao dos cursos - interacoes presenciais - similaridade entre os participantes A proposta e agrupar os municipios do estado de Minas Gerais conforme as caracteristicas de cada municipios considerando, tambem, a geolocalizacao ao agrupa-los.
 
+## Tecnica SKATER
+
+SKATER (Assuncao et al. 2006) e um algoritmo de clusterizacao espacial que consiste na na criacao de um grafo que conecta os pontos (municipios) aos seus vizinhos construindo uma relacao entre as vizinhancas. Cada municipio/area corresponde a um ponto e as conexoes sao denominadas arestas.
+
+Para cada aresta e atribuido um custo que calcula a similaridade entre os dois objetos, geralmente sendo adotada a distancia euclidiana sobre o espaço do vetor de atributos. Em seguida, os "custos" sao avaliados em cada no, eliminando as arestas que possuem menor "custo" associado. Ao final da "poda", tem-se *n* nos e *n-1* arestas.
+
+Usando a arvore gerada, aplica-se uma nova remocao de arestas ate que se obtenha a quantidade de clusters definida pelo pesquisador. Nessa etapa, a atribuicao dos custos e alterada sendo o novo custo de definir as arestas definido como a diferenca entre a soma dos quadrados dos desvios da arvore pela soma das duas parcelas obtidas dos quadrados dos desvios.
+
 # Base de dados
 
-Foram considerados os seguintes dados: \## Base 1: Caracteristicas Municipais Dados extraidos do Censo (IBGE) e do Atlas do Desenvolvimento Humano.
+Foram considerados os seguintes dados: \  
+
+## Base 1: Caracteristicas Municipais Dados extraidos do Censo (IBGE) e do Atlas do Desenvolvimento Humano.
 
 | variavel | descricao                                                                                                                 |
 |:---------------------------------|:-------------------------------------|
