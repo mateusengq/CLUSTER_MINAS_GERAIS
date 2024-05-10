@@ -7,5 +7,5 @@ SELECT
   va_industria,
   va_adespss
 FROM `basedosdados.br_ibge_pib.municipio` 
-WHERE ano = 2021 AND id_municipio LIKE '31%'
+WHERE ano = 2021 AND id_municipio LIKE '31%' --cosigo ibge para os municipios do estado de MG
 -- LIMIT 100
