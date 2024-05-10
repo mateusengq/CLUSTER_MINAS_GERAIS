@@ -85,7 +85,7 @@ Para os gráficos, foi utilizada a malha dos municípios brasileiros disponibili
 
 # Análise Exploratória
 
-O estado possui **853** municípios, com uma população superior a 20 milhões e uma densidade demográfica de 35,02 km².
+O estado possui **853** municípios, com uma população superior a 20 milhões e uma densidade demográfica de 35,02 km². Como o objetivo principal é a aplicação da técnica e já havia um conhecimento prévio dos dados e de suas características, parte da análise exploratória foi omitida.
 
 ## 1. Base PIB:
 - Todas as cidades apresentam valores para todos os grupos do PIB.
