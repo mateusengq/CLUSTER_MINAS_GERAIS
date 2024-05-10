@@ -265,11 +265,14 @@ A técnica SKATER mostrou-se eficaz para identificar agrupamentos espaciais de m
 
 Atraves dos agrupamentos criados, e possivel adaptar os produtos e estratégias de marketing de forma mais precisa e segmentada, levando em conta as necessidades e características de cada cluster.
 
-Resumo visual das variaveis em cada cluster.
-![Box-PLot agrupamentos](https://github.com/mateusengq/CLUSTER_MINAS_GERAIS/blob/main/GRAFICOS/RESULTADOS_BOX_PLOT_GRUPS.png)
-
 
 Referência:
 - Assunção, R. M., Neves, M. C., Câmara, G., & da Costa Freitas, C. (2006). Efficient regionalization techniques for socio‐economic geographical units using minimum spanning trees. *International Journal of Geographical Information Science*, 20(7), 797-811.
 - Shkolnik, Dmitry. Spatially constrained clustering and regionalization: https://www.dshkol.com/post/spatially-constrained-clustering-and-regionalization/
 - Feng, X; Gaboardi, J. Spatial ‘K’luster Analysis by Tree Edge Removal: Clustering Airbnb Spots in Chicago. https://pysal.org/spopt/notebooks/skater.html
+
+
+**Resumo visual das variaveis em cada cluster.**
+
+![Box-PLot agrupamentos](https://github.com/mateusengq/CLUSTER_MINAS_GERAIS/blob/main/GRAFICOS/RESULTADOS_BOX_PLOT_GRUPS.png)
+
