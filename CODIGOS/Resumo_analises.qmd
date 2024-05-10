@@ -1,0 +1,72 @@
+---
+title: "Untitled"
+format: html
+---
+
+# Introducao
+
+## Problema:
+
+**Objetivo principal**: apresentar o *'Kluster'* para realizar agrupamentos que considerar a geolocalizacao das regioes.
+
+Considerando uma empresa que necessita realizar uma campanha de marketing de um produto curso/treinamento para orgaos publicos do estado de Minas Gerais. O produto possui algumas particulares que pode ser adaptado para o perfil dos municipios, por exemplo, parte e personalizada de acordo com caracteristicas economicas e sociais. Alem da personalizacao, uma das etapas do treinamento envolve a troca de experiencias e interecao entre os participantes de forma presencial, fator que potencializado quando os publicos possuem similaridade.
+
+Diante das caracteristicas: - personalizacao dos cursos - interacoes presenciais - similaridade entre os participantes A proposta e agrupar os municipios do estado de Minas Gerais conforme as caracteristicas de cada municipios considerando, tambem, a geolocalizacao ao agrupa-los.
+
+# Base de dados
+
+Foram considerados os seguintes dados: \## Base 1: Caracteristicas Municipais Dados extraidos do Censo (IBGE) e do Atlas do Desenvolvimento Humano.
+
+| variavel | descricao                                                                                                                 |
+|:---------------------------------|:-------------------------------------|
+| VAR_001  | codigoIBGE                                                                                                                |
+| VAR_003  | populacao                                                                                                                 |
+| VAR_004  | taxa de crescimento geografico (%)                                                                                        |
+| VAR_005  | percentual da populacao em areas urbanas                                                                                  |
+| VAR_006  | percentual de domicilios classificados como 'casa'                                                                        |
+| VAR_007  | percentual de domicilios com abastecimento pela rede geral d'agua                                                         |
+| VAR_008  | percentual de domicilios conectados a rede geral de esgoto                                                                |
+| VAR_009  | percentual de domicilios com banheiro de uso exclusivo                                                                    |
+| VAR_010  | percentual de domicilios com coleta de lixo                                                                               |
+| VAR_011  | renda media da populacao                                                                                                  |
+| VAR_012  | expectativa de anos de estudo: media de anos de estudos concluidos com aprovacao das pessoas com 25 anos ou mais de idade |
+| VAR_017  | percentual de pobres no municipio no ano de 2010                                                                          |
+| VAR_018  | prop_ocupados_medio: Percentual dos ocupados com medio completo                                                           |
+| VAR_019  | prop_ocupados_superior: Percentual dos ocupados com superior completo                                                     |
+| VAR_020  | PEA: populacao economicamente ativa                                                                                       |
+| VAR_021  | Mortalidade infantil de 5 anos                                                                                            |
+| VAR_022  | Desigualdade de Gini em 2010                                                                                              |
+| VAR_023  | Probabilidade de sobrevivencia ate os 60 anos                                                                             |
+| VAR_031  | produto interno bruto per capita                                                                                          |
+| VAR_055  | densidade demografica                                                                                                     |
+
+## Base 2: Quantidades de Empresas por Secao
+
+Os dados foram extraidos da Base dos Dados.
+
+| variavel             | descricao               |
+|:---------------------|:------------------------|
+| secao                | secao do CNAE - letra   |
+| descricao            | descricao do CNAE       |
+| id_municipio         | CODIGO IBGE - 7 digitos |
+| total_empresas_secao | quantidade de empresas  |
+
+## Base 3: Informacao sobre o PIB municipal em 2021
+
+Os dados foram extraidos da Base dos Dados.
+
+| variavel        | descricao                                                                                                                              |
+|:---------------------------------|:-------------------------------------|
+| id_municipio    | CODIGO IBGE - 7 DIGITOS                                                                                                                |
+| pib             | Produto Interno Bruto a precos correntes                                                                                               |
+| impostos        | Impostos, líquidos de subsídios, sobre produtos a preços correntes                                                                     |
+| va_agropecuaria | Valor adicionado bruto a preços correntes da agropecuária                                                                              |
+| va_industria    | Valor adicionado bruto a preços correntes da indústria                                                                                 |
+| va_servicos     | Valor adicionado bruto a preços correntes dos serviços, exclusive administração, defesa, educação e saúde públicas e seguridade social |
+| va_adespss      | Valor adicionado bruto a preços correntes da administração, defesa, educação e saúde públicas e seguridade social                      |
+
+# Analise Exploratoria
+
+# Resultados
+
+# Conclusoes
