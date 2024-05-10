@@ -251,7 +251,7 @@ Para o Modelo 2, foram gerados mais alguns agrupamentos, considerando os valores
 
 ## Resumo dos Clusters
 
-Para resumir as características de cada estado, utilizamos *k* = 10. Abaixo, a visualização gráfica da mediana dos indicadores para os clusters 3 e 8. Os demais podem ser acessados [AQUI](https://github.com/mateusengq/CLUSTER_MINAS_GERAIS/tree/main/GRAFICOS).
+Para resumir as características de cada estado, utilizamos *k* = 10. Abaixo, a visualização gráfica da mediana dos indicadores para os clusters 3 e 8. Os demais podem ser acessados [AQUI](https://github.com/mateusengq/CLUSTER_MINAS_GERAIS/tree/main/GRAFICOS). Ao final, inclui o Box-PLot para cada variavel para os 10 grupos gerados.
 
 Cluster 3 - Norte do Estado
 ![Cluster 3 = Norte de Minas Gerais](https://github.com/mateusengq/CLUSTER_MINAS_GERAIS/blob/main/GRAFICOS/RESULTADOS_CLUSTER_3.jpeg)
@@ -265,7 +265,8 @@ A técnica SKATER mostrou-se eficaz para identificar agrupamentos espaciais de m
 
 Atraves dos agrupamentos criados, e possivel adaptar os produtos e estratégias de marketing de forma mais precisa e segmentada, levando em conta as necessidades e características de cada cluster.
 
-
+Resumo visual das variaveis em cada cluster.
+![Box-PLot agrupamentos](https://github.com/mateusengq/CLUSTER_MINAS_GERAIS/blob/main/GRAFICOS/RESULTADOS_BOX_PLOT_GRUPS.png)
 
 
 Referência:
